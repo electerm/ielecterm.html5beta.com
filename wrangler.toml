@@ -1,0 +1,5 @@
+name = "ielecterm.html5beta.com"
+compatibility_date = "2024-07-01"
+
+# Cloudflare Pages configuration
+pages_build_output_dir = "public"

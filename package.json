@@ -1,0 +1,78 @@
+{
+  "name": "ielecterm.html5beta.com",
+  "version": "0.3.1",
+  "description": "homepage for ielecterm app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run c",
+    "d": "vercel dev",
+    "b": "./bin/build",
+    "tb": "./bin/build-only",
+    "b1": "node bin/build-all.js",
+    "b2": "node bin/build-js.js",
+    "sitemap": "node bin/sitemap.js",
+    "build": "echo \"ok\"",
+    "fix": "standard --fix",
+    "lint": "standard",
+    "cp": "cp -r src/static/* public/",
+    "rm": "rm -rf public/ && mkdir public",
+    "c": "node bin/vite/dev-server.js",
+    "s": "node bin/server.mjs",
+    "bb": "NODE_ENV=production vite build --config bin/vite/conf.js",
+    "cut": "./bin/qr-code.cut.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/electerm/electerm.html5beta.com.git"
+  },
+  "keywords": [
+    "electerm.html5beta.com",
+    "electerm"
+  ],
+  "author": {
+    "name": "ZHAO Xudong",
+    "email": "zxdong@gmail.com",
+    "url": "http://html5beta.com"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.3",
+    "@types/node": "^20.10.6",
+    "@vitejs/plugin-react": "^5.0.4",
+    "axios": "^1.6.8",
+    "canvas": "^3.2.0",
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.4.1",
+    "express": "^4.19.2",
+    "json5": "^2.2.3",
+    "morgan": "^1.10.1",
+    "pug": "^3.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "shelljs": "^0.9.0",
+    "sitemaps": "^2.0.6",
+    "standard": "^17.1.2",
+    "stylus": "^0.64.0",
+    "typescript": "^5.4.5",
+    "universe-bg": "^1.0.0",
+    "vite": "^7.1.9"
+  },
+  "standard": {
+    "ignore": [
+      "*.html",
+      "/res/",
+      "/temp",
+      "/data",
+      "/public"
+    ],
+    "parserOptions": {
+      "requireConfigFile": false,
+      "sourceType": "module"
+    }
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/electerm/ielecterm.html5beta.com/issues"
+  },
+  "homepage": "https://ielecterm.html5beta.com"
+}
